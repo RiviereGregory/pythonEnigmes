@@ -4,13 +4,21 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
+def a_ski(character):
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    print(chr(character), end='')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+def read_fichier(name):
+    fichier = open(name, 'r')
+    for line in fichier:
+        for word in line.split():
+            a_ski(int(word))
+    fichier.close()
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    read_fichier('enigmes\Enigme1.txt')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
