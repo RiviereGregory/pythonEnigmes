@@ -24,7 +24,10 @@ def solution():
                                                                         print("MORE=", 1000 * M + 100 * O + 10 * R + E)
                                                                         print("MONEY=", 10000 * M + 1000 * O +
                                                                               100 * N + 10 * E + Y)
+                                                                        print("MONROE",
+                                                                              100000 * M + 10000 * O + 1000 * N + 100 * R + 10 * O + E)
 
 
+# solution : MONROE 106805
 if __name__ == '__main__':
     solution()
